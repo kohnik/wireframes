@@ -1,0 +1,15 @@
+mixin Benefits(data)
+  section.benefits(id="sec1")
+    .wr-section
+      h1.benefits__title!=data.title
+      span.benefits__text!=data.text
+      .benefits__container-img
+        .benefits__container
+          img.benefits__img(src="img/benefit1.png", alt='benefits')
+          span.benefits__img-text!='Benefits 1'
+        .benefits__container
+          img.benefits__img(src="img/benefit2.png", alt='benefits')
+          span.benefits__img-text!='Benefits 2'
+        .benefits__container
+          img.benefits__img(src="img/benefit3.png", alt='benefits')
+          span.benefits__img-text!='Benefits 3'

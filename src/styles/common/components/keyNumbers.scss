@@ -1,0 +1,88 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.key {
+  min-height: 550px;
+  .wr-section {
+    display: flex;
+    padding: 150px 140px 0 105px;
+  }
+  &__title {
+    font-size: 40px;
+    font-family: $font-Rubik;
+    font-weight: 500;
+    color: $main_blue;
+    line-height: 1.2;
+    align-self: start;
+    margin-bottom: 45px;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $_black;
+    line-height: 1.64;
+  }
+  &__container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 230px;
+  }
+  &__numbers {
+    font-size: 60px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $main_blue;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  &__text-under {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    color: $_black;
+    line-height: 1.2;
+  }
+  &__price {
+    font-size: 60px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $orange;
+    line-height: 1.2;
+    letter-spacing: -2.8px;
+    margin-bottom: 20px;
+  }
+  &__text-price {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    color: $orange;
+    line-height: 1.2;
+  }
+  &__container-number {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  &__container-right {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 160px;
+    width: 65%;
+  }
+  &__container-row {
+    min-width: 210px;
+  }
+  &__container-right > *:nth-child(2):nth-child(2) {
+    text-align: end;
+  }
+  .stage {
+    align-self: end;
+    width: 33%;
+  }
+  &__text-under {
+    text-align: start;
+  }
+}

@@ -1,0 +1,10 @@
+mixin Partnership(data)
+  section.partnership
+    .wr-section
+        h2.partnership__title!= data.title
+        .partnership__container
+          each i in [1, 2, 3, 4, 5, 6]
+            .partnership__partner-container
+              .partnership__circle
+              .partnership__subtitle!=data.partner
+

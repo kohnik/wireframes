@@ -1,0 +1,48 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.descriptive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  z-index: 2;
+  .wr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 170px 0 170px;
+  }
+  &__container-img {
+    position: absolute;
+    top: 150px;
+    background-image: url("../img/groupVsb.png");
+    background-size: 1900px;
+    width: 100%;
+    min-height: 500px;
+    z-index: 3;
+  }
+  &__title {
+    font-size: 60px;
+    font-family: $font-Rubik;
+    font-weight: 500;
+    color: $main_blue;
+    line-height: 0.6;
+    margin-bottom: 65px;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    color: $_black;
+    line-height: 1.64;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__container-video {
+    width: 80%;
+    height: 300px;
+    background-color: #c4f0e6;
+  }
+}

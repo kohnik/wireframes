@@ -1,0 +1,18 @@
+mixin Months(data)
+    section.months
+      .wr-section
+        .months__containers
+          each item,index in data.months
+            .months__block
+              if(index === 0 || index === 1 || index === 3  || index ===  5 || index === 8)
+                span.months__block-text!=item
+                div(class=`months__container-${item} months__mark`)
+                  div(class=`months__rectangle-${item} months__rectangle`)
+                    div(class=`months__${item}-line months__line`)
+                    div(class=`months__${item}-point months__point`)
+                  div(class=`months__text-${item} months__container-text`)
+                    .months__title!='Goal 1'
+                    span.months__text!='Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.'
+              else
+                span.months__block-text!=item
+

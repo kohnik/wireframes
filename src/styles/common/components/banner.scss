@@ -1,0 +1,29 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: $main_blue;
+  width: 100%;
+  min-height: 600px;
+  z-index: 2;
+  &__container-img {
+    position: absolute;
+    top: 30px;
+    background-image: url("../img/groupVsb.png");
+    background-size: 1900px;
+    width: 100%;
+    min-height: 585px;
+    z-index: 3;
+  }
+  &__title {
+    font-size: 20px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1.23;
+    width: 30%;
+  }
+}

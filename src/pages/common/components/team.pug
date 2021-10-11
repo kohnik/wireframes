@@ -1,0 +1,12 @@
+mixin Team(data)
+  section.team
+    .wr-section
+      h2.team__title!= data.title
+      .team__container
+        each i in [1, 2, 3, 4, 5, 6]
+          .team__partner-container
+            .team__circle-mini
+            .team__circle
+            .team__nameAndSurname!=data.nameAndSurname
+            .team__subtitle!=data.subtitle
+

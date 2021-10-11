@@ -1,0 +1,43 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.partnership {
+  background-color: $main_blue;
+  min-height: 500px;
+  .wr-section {
+    display: flex;
+    flex-direction: column;
+    padding: 105px 140px 0 105px;
+  }
+  &__title {
+    font-size: 60px;
+    font-family: $font-Rubik;
+    font-weight: 500;
+    color: $color-text;
+    line-height: 0.6;
+    margin-bottom: 90px;
+    text-align: center;
+  }
+  &__subtitle {
+    font-size: 26px;
+    font-family: $font-Rubik;
+    line-height: 0.8;
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__circle {
+    height: 80px;
+    width: 80px;
+    background-color: blueviolet;
+    border-radius: 50%;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__partner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

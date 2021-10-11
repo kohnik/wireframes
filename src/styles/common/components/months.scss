@@ -1,0 +1,242 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.months {
+  .wr-section {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 0 0;
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    width: 170px;
+    height: 70px;
+  }
+  &__block-text {
+    font-size: 50px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $_black;
+    line-height: 1.2;
+  }
+  &__title {
+    font-size: 26px;
+    font-family: $font-Rubik;
+    color: rgb(29, 29, 27);
+    font-weight: bold;
+    line-height: 0.8;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 16px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    color: $_black;
+  }
+
+
+  //mark Aug
+  &__container-Aug {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 200px;
+  }
+  &__rectangle-Aug {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $main-blue;
+    width: 120px;
+    height: 140px;
+    margin-right: 145px;
+  }
+  &__Aug-line {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    height: 2px;
+    background-color: $main-blue;
+  }
+  &__Aug-point {
+    position: absolute;
+    top: 16px;
+    left: 150px;
+    width: 10px;
+    height: 10px;
+    background-color: $main-blue;
+    border-radius: 50%;
+  }
+  //mark Sep
+  &__container-Sep {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    left: -65px;
+  }
+  &__rectangle-Sep {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f2aaa1;
+    width: 35px;
+    height: 210px;
+  }
+  &__Sep-line {
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    width: 150px;
+    height: 2px;
+    background-color: #f2aaa1;
+  }
+  &__Sep-point {
+    position: absolute;
+    top: 16px;
+    left: -150px;
+    width: 10px;
+    height: 10px;
+    background-color: #f2aaa1;
+    border-radius: 50%;
+  }
+  &__text-Sep {
+    position: absolute;
+    left: -360px;
+    width: 200px;
+    & > span {
+      display: block;
+      text-align: right;
+    }
+    & > div {
+      text-align: right;
+    }
+  }
+
+  //mark Now
+  &__container-Now {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    left: -140px;
+  }
+  &__rectangle-Now {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background:
+      repeating-linear-gradient(
+        45deg,
+        $color-text,
+        $color-text 10px,
+        #9ed1dc 10px,
+        #9ed1dc 20px
+      );
+    width: 35px;
+    height: 43.5vh;
+  }
+  &__Now-line {
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    width: 150px;
+    height: 2px;
+    background-color: #9ed1dc;
+  }
+  &__Now-point {
+    position: absolute;
+    top: 16px;
+    left: -150px;
+    width: 10px;
+    height: 10px;
+    background-color: #9ed1dc;
+    border-radius: 50%;
+  }
+  &__text-Now {
+    position: absolute;
+    left: -360px;
+    width: 200px;
+    & > span {
+      display: block;
+      text-align: right;
+    }
+    & > div {
+      text-align: right;
+    }
+  }
+
+  //mark Jan
+  &__container-Jan {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 200px;
+  }
+  &__rectangle-Jan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #c4f0e6;
+    width: 120px;
+    height: 28.9vh;
+    margin-right: 145px;
+  }
+  &__Jan-line {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    height: 2px;
+    background-color: #c4f0e6;
+  }
+  &__Jan-point {
+    position: absolute;
+    top: 16px;
+    left: 150px;
+    width: 10px;
+    height: 10px;
+    background-color: #c4f0e6;
+    border-radius: 50%;
+  }
+
+  //mark Apr
+  &__container-Apr {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 270px;
+  }
+  &__rectangle-Apr {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f2aaa1;
+    width: 120px;
+    height: 7.2vh;
+    margin-right: 145px;
+  }
+  &__Apr-line {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    height: 2px;
+    background-color: #f2aaa1;
+  }
+  &__Apr-point {
+    position: absolute;
+    top: 16px;
+    left: 150px;
+    width: 10px;
+    height: 10px;
+    background-color: #f2aaa1;
+    border-radius: 50%;
+  }
+  &__text-Apr > span {
+    display: block;
+    height: 39px;
+    overflow: hidden;
+  }
+
+}

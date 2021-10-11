@@ -1,0 +1,26 @@
+mixin KeyNumbers(data)
+  section.key(id="sec2")
+    .wr-section
+      .key__container-left
+        h2.key__title!=data.title
+        span.key__text!=data.text
+      .key__container-right
+        .key__container-row
+          .key__container-number
+            span.key__numbers!='100 m'
+            span.key__text-under!=data.text_preIcon
+          .key__container-number
+            span.key__numbers!='1/20'
+            span.key__text-under!=data.text_integration
+          .key__container-number
+        .key__container-row
+          .key__container-number
+            span.key__numbers!='22.32%'
+            span.key__text-under!=data.text_marketing
+          .key__container-number
+            span.key__numbers!='$34.854 k'
+            span.key__text-under.stage!=data.text_others
+        .key__container-row
+          .key__container-number
+            span.key__numbers!='100 m'
+            span.key__text-under!=data.text_advisor

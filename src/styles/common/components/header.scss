@@ -1,0 +1,103 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.header {
+  position: fixed;
+  width: 100vw;
+  background-color: $main_blue;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+  .wr-section {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    padding: 0 30px 0 15px;
+  }
+  &__logo {
+    height: 25px;
+    width: 25px;
+    background-color: $color-text;
+    border-radius: 50%;
+    margin-right: 30px;
+    transition: all 0.2s ease-in-out;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__list-nav {
+    display: flex;
+  }
+  &__arrow {
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+  }
+  &__arrow-black {
+    display: none;
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+  }
+  &__item {
+    padding-right: 40px;
+  }
+  &__item.arrow {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: $color-text;
+    font-size: 14px;
+    font-family: $font-Rubik;
+    line-height: 1.2;
+  }
+  &__item-text {
+    color: $color-text;
+    font-size: 14px;
+    font-family: $font-Rubik;
+    line-height: 1.2;
+  }
+  &__list-purchases {
+    display: flex;
+    margin-left: auto;
+  }
+  &__link-purchases {
+    font-size: 14px;
+    font-family: $font-Rubik;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    color: $orange;
+    text-decoration: none;
+  }
+}
+.header.active {
+  background-color: $color-text;
+  transition: all 0.1s ease-in-out;
+}
+.header__item-text.active {
+  color: $_black;
+  transition: all 0.1s ease-in-out;
+}
+.header__link.active {
+  color: $_black;
+  transition: all 0.1s ease-in-out;
+}
+.header__logo.active {
+  background-color: $_black;
+  transition: all 0.2s ease-in-out;
+}
+.header__arrow.active {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+.header__arrow-black.active {
+  display: inline;
+  transition: all 0.2s ease-in-out;
+}

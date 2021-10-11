@@ -1,0 +1,25 @@
+mixin Vsb(data)
+  section.vsb
+    .wr-section
+      .vsb__container-right
+        h2.vsb__title!=data.title
+        span.vsb__text!=data.text
+        span.vsb__button!=data.buttonText
+      .vsb__container-left
+        .vsb__container-row
+          .vsb__container-number
+            span.vsb__price!='$3.25'
+            span.vsb__text-price!=data.text_price
+          .vsb__container-number
+            span.vsb__numbers!='$320,000,000'
+            span.vsb__text-under!=data.text_market
+
+        .vsb__container-row
+          .vsb__container-number
+            span.vsb__numbers!='$100,000,000'
+            span.vsb__text-under!=data.text_supply
+          .vsb__container-number
+            span.vsb__numbers!='1/20'
+            span.vsb__text-under.stage!=data.text_stage
+
+

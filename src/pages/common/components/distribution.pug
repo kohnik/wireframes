@@ -1,0 +1,46 @@
+mixin Distribution(data)
+  section.distribution
+    .wr-section
+      .distribution__container-left
+        h2.distribution__title!=data.title
+        span.distribution__text!=data.text
+      .distribution__container-right
+        .distribution__container-row
+          .distribution__container-number
+            span.distribution__numbers!='$24.05%'
+            span.distribution__text-under!=data.text_preIcon
+          .distribution__container-number
+            span.distribution__numbers!='11.16%'
+            span.distribution__text-under!=data.text_integration
+          .distribution__container-number
+        .distribution__container-row
+          .distribution__container-number
+            span.distribution__numbers!='30.25%'
+            span.distribution__text-under!=data.text_marketing
+          .distribution__container-number
+            span.distribution__numbers!='6.15%'
+            span.distribution__text-under.stage!=data.text_others
+        .distribution__container-row
+          .distribution__container-number
+            span.distribution__numbers!='22.32%'
+            span.distribution__text-under!=data.text_advisor
+          .distribution__container-number
+            span.distribution__numbers!='6.07%'
+            span.distribution__text-under.stage!=data.text_others2
+  section.distribution2
+    .wr-section
+      .distribution2__container-left
+        h2.distribution2__title!=data.title
+        span.distribution2__text!=data.text
+      .distribution2__container-right
+        img.distribution2__img(src='img/graphic.png', alt='graphic')
+        .distribution2__container-legends
+          ul.distribution2__list
+            each item in data.legends
+              li.distribution2__item
+                span.distribution2__square
+                span.distribution2__item-text!=item
+
+
+
+

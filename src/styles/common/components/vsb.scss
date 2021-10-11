@@ -1,0 +1,99 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.vsb {
+  min-height: 550px;
+  background-color: $main_blue;
+  .wr-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 140px 0 105px;
+  }
+  &__title {
+    font-size: 60px;
+    font-family: $font-Rubik;
+    font-weight: 500;
+    color: $color-text;
+    line-height: 0.6;
+    align-self: start;
+    margin-bottom: 45px;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $color-text;
+    line-height: 1.64;
+  }
+  &__container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    height: 40px;
+    align-self: flex-start;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    color: $color-text;
+    border: 2px solid $color-text;
+    cursor: pointer;
+  }
+  &__numbers {
+    font-size: 60px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $color-text;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  &__text-under {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    color: $color-text;
+    line-height: 1.2;
+  }
+  &__price {
+    font-size: 60px;
+    font-family: "Supply", sans-serif;
+    font-weight: 400;
+    color: $orange;
+    line-height: 1.2;
+    letter-spacing: -2.8px;
+    margin-bottom: 20px;
+  }
+  &__text-price {
+    font-size: 14px;
+    font-family: "Supply", sans-serif;
+    font-weight: 300;
+    color: $orange;
+    line-height: 1.2;
+  }
+  &__container-number {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  &__container-left {
+    display: flex;
+    //flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  &__container-left > *:nth-child(2):nth-child(2) {
+    text-align: end;
+  }
+  .stage {
+    align-self: end;
+    width: 33%;
+  }
+  &__text-under {
+    text-align: start;
+  }
+}

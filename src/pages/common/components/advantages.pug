@@ -1,0 +1,15 @@
+mixin Advantages(data)
+  section.advantages
+    .wr-section
+      h1.advantages__title!=data.title
+      span.advantages__text!=data.text
+      .advantages__container-img
+        .advantages__container
+          img.advantages__img(src="img/advantages1.png", alt='advantages')
+          span.advantages__img-text!='Advantages 1'
+        .advantages__container
+          img.advantages__img(src="img/advantages2.png", alt='advantages')
+          span.advantages__img-text!='Advantages 2'
+        .advantages__container
+          img.advantages__img(src="img/advantages3.png", alt='advantages')
+          span.advantages__img-text!='Advantages 3'
