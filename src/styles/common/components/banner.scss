@@ -25,5 +25,20 @@
     color: rgb(255, 255, 255);
     line-height: 1.23;
     width: 30%;
+    margin-top: 40px;
+  }
+  @include media-mobile-down() {
+    min-height: 435px;
+    &__container-img {
+      top: 30px;
+      background-size: 945px;
+      min-height: 435px;
+    }
+    &__title {
+      font-size: 14px;
+      line-height: 1.23;
+      width: 50%;
+      margin-top: 75px;
+    }
   }
 }

@@ -47,4 +47,28 @@
     height: 110px;
     width: 110px;
   }
+  @include media-mobile-down() {
+    .wr-section {
+      padding: 140px 30px 0 30px;
+    }
+    &__title {
+      font-size: 40px;
+      text-align: center;
+      line-height: 1;
+      margin-bottom: 40px;
+    }
+    &__text {
+      margin-bottom: 60px;
+      text-align: start;
+    }
+    &__container-img {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    &__container {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  }
 }

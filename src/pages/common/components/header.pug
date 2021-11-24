@@ -1,7 +1,7 @@
 mixin Header(data)
   header.header(id="high3")
     .wr-section
-      nav.header__nav
+      nav.header__nav-desktop
         .header__logo(id="high3")
         ul.header__list-nav
           each item,index in data.list_nav
@@ -23,3 +23,30 @@ mixin Header(data)
             else
               li.header__item
                 a.header__link-purchases!=item
+      .header__dropdown
+        span.header__dropdown-button
+          svg.header__menu(role="img")
+            use(xlink:href="img/sprite-svg.svg#" + "menu")
+        .header__dropdown-child(id="high3")
+          nav.header__nav-laptop
+            ul.header__list-nav
+              each item,index in data.list_nav
+                if(index === 1 || index === 2 || index === 6)
+                  li.header__item.arrow
+                    span.header__item-text(id="high3")!=item
+                    img.header__arrow(src="img/arrow_down.svg", alt="arrow-white" id="high3")
+                    img.header__arrow-black(src="img/arrow_down_black.svg", alt="arrow-black" id="high3")
+                else
+                  li.header__item
+                    a.header__link(id="high3")!=item
+        ul.header__list-purchases
+          each item,index in data.list_right
+            if(index === 2)
+              li.header__item-arrow.laptop
+                span.header__item-text(id="high3")!=item
+                img.header__arrow(src="img/arrow_down.svg", alt="arrow-white" id="high3")
+                img.header__arrow-black(src="img/arrow_down_black.svg", alt="arrow-black" id="high3")
+            else
+              li.header__item.laptop
+                a.header__link-purchases!=item
+

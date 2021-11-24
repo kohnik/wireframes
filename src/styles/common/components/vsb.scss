@@ -96,4 +96,32 @@
   &__text-under {
     text-align: start;
   }
+  @include media-mobile-down() {
+    .wr-section {
+      padding: 140px 30px 0 30px;
+      flex-direction: column;
+    }
+    &__container-right {
+      margin-bottom: 40px;
+    }
+    &__container-left {
+      margin-left: 0;
+      flex-direction: column;
+    }
+    &__price {
+      font-size: 35px;
+    }
+    &__numbers {
+      font-size: 35px;
+    }
+    &__text-under {
+      font-size: 14px;
+    }
+    &__container-left > *:nth-child(2):nth-child(2) {
+      text-align: start;
+    }
+    .stage {
+      align-self: start;
+    }
+  }
 }
